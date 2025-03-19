@@ -1,21 +1,22 @@
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import Clock from "./components/Clock";
-import { createStackNavigator, StackView } from "@react-navigation/stack";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './components/HomeScreen';
+import Clock from './components/Clock';
+import PomodoroTimer from './components/PomodoroTimer';
 
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Clock" component={Clock} />
+        <Stack.Screen name="PomodoroTimer" component={PomodoroTimer} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1, 
-    backgroundColor: "black",
-  },
-});
 
 export default App;

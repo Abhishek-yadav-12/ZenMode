@@ -21,7 +21,7 @@ const Clock = () => {
   // Ensure proper formatting and prevent errors
   const formattedTime =
     currentTime instanceof Date
-      ? currentTime.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })
+      ? currentTime.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit" })
       : "00:00";
 
   const formattedDate =
