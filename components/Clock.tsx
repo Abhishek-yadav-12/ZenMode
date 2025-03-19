@@ -18,21 +18,25 @@ const Clock = () => {
     };
   }, []);
 
-  // Ensure proper formatting and prevent errors
-  const formattedTime =
-    currentTime instanceof Date
-      ? currentTime.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", second: "2-digit" })
-      : "00:00";
+  // Ensure proper formatting
+  const hours = currentTime.getHours().toString().padStart(2, "0");
+  const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+  const seconds = currentTime.getSeconds().toString().padStart(2, "0");
 
-  const formattedDate =
-    currentTime instanceof Date
-      ? currentTime.toLocaleDateString("en-US", { weekday: "long", day: "2-digit", month: "long", year: "numeric" })
-      : "Unknown Date";
+  const formattedDate = currentTime.toLocaleDateString("en-US", {
+    weekday: "long",
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  });
 
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <Text style={styles.time}>{formattedTime}</Text>
+      <Text style={styles.time}>
+        <Text style={styles.timeMain}>{hours}:{minutes}</Text>
+        <Text style={styles.timeSeconds}>:{seconds}</Text>
+      </Text>
       <Text style={styles.date}>{formattedDate}</Text>
     </View>
   );
@@ -43,19 +47,27 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "black",
+    backgroundColor: "#1C1C1C", // Darker shade for vintage screen effect
   },
   time: {
     fontSize: 150,
     fontWeight: "bold",
-    color: "white",
+    color: "#F4EDE3", // Slightly warm off-white for vintage effect
     textAlign: "center",
+    fontFamily: "monospace",
+  },
+  timeMain: {
+    color: "#F4EDE3", // Main time remains off-white
+  },
+  timeSeconds: {
+    color: "#FF9800", // Retro orange tint for seconds
   },
   date: {
     fontSize: 25,
-    color: "gray",
+    color: "#A9A9A9", // Muted gray for a soft vintage look
     marginTop: 10,
     textAlign: "center",
+    fontFamily: "monospace",
   },
 });
 
