@@ -57,6 +57,7 @@
     ```
     *For iOS*
 
+    ```sh
     npx react-native run-ios
 
 
