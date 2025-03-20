@@ -16,13 +16,13 @@
 ## 📸 Screenshots  
 
 ### Home Screen  
-<img src="./src/ss1.png" alt="Home Screen" height="600" width="340">
+<img src="./src/ss1.png" alt="Home Screen" height="400">
 
 ### Clock UI  
-<img src="./src/ss2.png" alt="Clock UI" height="600" width="340">
+<img src="./src/ss2.png" alt="Clock UI" height="400">
 
 ### Pomodoro Timer  
-<img src="./src/ss3.png" alt="Pomodoro Timer" height="600" width="340">
+<img src="./src/ss3.png" alt="Pomodoro Timer" height="400">
 
 ---
 
