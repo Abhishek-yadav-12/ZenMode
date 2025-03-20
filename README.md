@@ -16,19 +16,13 @@
 ## 📸 Screenshots  
 
 ### Home Screen  
-*(Add an image of the home screen here.)*  
-
-![Home Screen](./src/ss1.png)  
+<img src="./src/ss1.png" alt="Home Screen" height="800">
 
 ### Clock UI  
-*(Add an image of the clock screen here.)*  
-
-![Clock UI](./src/ss2.png)  
+<img src="./src/ss2.png" alt="Clock UI" height="800">
 
 ### Pomodoro Timer  
-*(Add an image of the Pomodoro timer screen here.)*  
-
-![Pomodoro Timer](./src/ss3.png)  
+<img src="./src/ss3.png" alt="Pomodoro Timer" height="800">
 
 ---
 
@@ -47,4 +41,3 @@
    ```sh
    git clone https://github.com/Abhishek-yadav-12/ZenMode.git
    cd ZenMode
-```
