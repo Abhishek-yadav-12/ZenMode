@@ -41,3 +41,23 @@
    ```sh
    git clone https://github.com/Abhishek-yadav-12/ZenMode.git
    cd ZenMode
+
+
+2. **Install the dependencies:**  
+
+    ```sh
+    npm install
+
+3. **Run the App:**
+
+    *For Android*
+
+    ```sh
+    npx react-native run-android
+``
+    *For iOS*
+
+    npx react-native run-ios
+
+
+**Made with 🩵 by Abhishek Yadav 🚀**
